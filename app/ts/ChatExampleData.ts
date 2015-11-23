@@ -62,7 +62,7 @@ export class ChatExampleData {
     userService.setCurrentUser(me);
 
     // create the initial messages
-    initialMessages.map( (message: Message) => messagesService.addMessage(message) );
+    initialMessages.forEach( (message: Message) => messagesService.addMessage(message) );
 
     threadsService.setCurrentThread(tEcho);
 
